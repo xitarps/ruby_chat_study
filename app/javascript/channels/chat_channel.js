@@ -3,6 +3,7 @@ import consumer from "./consumer"
 consumer.subscriptions.create("ChatChannel", {
   connected() {
     // Called when the subscription is ready for use on the server
+    alert("Conectado! chat room!");
   },
 
   disconnected() {
